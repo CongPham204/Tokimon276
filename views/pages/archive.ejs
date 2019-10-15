@@ -1,0 +1,36 @@
+<html><body>
+<table border="1" cellpadding="7" cellspacing="7">
+  <tr>
+    <th>Tokimon Name</th>
+    <th>Name</th>
+    <th>Height</th>
+    <th>Weight</th>
+    <th>Fight</th>
+    <th>Fly</th>
+    <th>Fire</th>
+    <th>Electric</th>
+    <th>Ice</th>
+    <th>Trainer Name</th>
+  </tr>
+  <% if(data.length){ 
+    for(var i = 0;i < row.length;i++) { %>
+  <tr>
+    <td><%=row[i].field1%></td>
+    <td><%=row[i].field2%></td>
+    <td><%=row[i].field3%></td>
+    <td><%=row[i].field4%></td>
+    <td><%=row[i].field5%></td>
+    <td><%=row[i].field6%></td>
+    <td><%=row[i].field7%></td>
+    <td><%=row[i].field8%></td>
+    <td><%=row[i].field9%></td>
+    <td><%=row[i].field10%></td>
+  </tr>
+  <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No Tokimon</td>
+  </tr>
+<% } %>
+</table>
+</body></html>
